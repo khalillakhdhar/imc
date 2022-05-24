@@ -83,11 +83,11 @@ render() {
   <h1 className="text-center">Calcule IMC</h1>
   <div className="mb-3">
   <label for="exampleFormControlInput1" className="form-label">poid</label>
-  <input type="text" name="poid" value={this.state.poid} onChange={this.onChange} className="form-control"  placeholder="Votre poids ici" />
+  <input type="text" name="poid" pattern='[0-9.]{2,6}' value={this.state.poid} onChange={this.onChange} className="form-control"  placeholder="Votre poids ici" />
 </div>
 <div className="mb-3">
   <label for="exampleFormControlInput1" className="form-label">taille</label>
-  <input type="text" name="taille" value={this.state.taille} onChange={this.onChange} className="form-control"  placeholder="Votre taille ici" />
+  <input type="text" name="taille" pattern='[0-9.]{2,6}' value={this.state.taille} onChange={this.onChange} className="form-control"  placeholder="Votre taille ici" />
   
 </div>
 
