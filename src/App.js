@@ -80,7 +80,7 @@ render() {
     </div>
     <div className="col">
     <form onSubmit={this.handleSubmit} >
-  <h1 className="text-center">Calcule IMC</h1>
+  <h1 className="text-center">Calcule d'IMC</h1>
   <div className="mb-3">
   <label for="exampleFormControlInput1" className="form-label">poid</label>
   <input type="text" name="poid" pattern='[0-9.]{2,6}' value={this.state.poid} onChange={this.onChange} className="form-control"  placeholder="Votre poids ici" />
